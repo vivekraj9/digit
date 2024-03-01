@@ -1,7 +1,55 @@
 <!DOCTYPE html>
-<html>
-   <body>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Prediction Result</title>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+   <style>
+      /* Background gradient */
+      body {
+         margin: 0;
+         padding: 0;
+         background: linear-gradient(to bottom, #ff7e5f, #feb47b);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         min-height: 100vh;
+         font-family: 'Roboto', sans-serif;
+      }
+
+      /* Container styling */
+      .container {
+         background-color: #fff;
+         border-radius: 10px;
+         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+         padding: 30px;
+         text-align: center;
+         max-width: 400px;
+         width: 100%;
+      }
+
+      /* Header styling */
+      h2 {
+         margin-top: 0;
+         color: #333;
+         font-weight: 500;
+         font-size: 24px;
+         margin-bottom: 20px;
+      }
+
+      /* Result paragraph styling */
+      p {
+         color: #333;
+         font-size: 18px;
+         margin-bottom: 20px;
+      }
+   </style>
+</head>
+<body>
+   <div class="container">
       <h2>Prediction Result</h2>
       <p>The predicted digit is: {{ digit }}</p>
-   </body>
+   </div>
+</body>
 </html>
